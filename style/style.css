@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+body {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgb(92, 86, 86),rgb(48, 48, 48)) no-repeat center center / cover;
+}
+
+#navlinks {
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: white;
+    width: 100vw;
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    column-gap: 4vw;
+    row-gap: 0;
+}
