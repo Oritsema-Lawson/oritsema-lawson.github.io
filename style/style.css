@@ -1,15 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url(modern-normalize.css);
 
-
+html {
+    font-size: 100%;
+    scroll-behavior: smooth;
+    overflow: hidden;
+}
 
 body {
+    font-family: "Roboto", sans-serif;
+    text-rendering: geometricPrecision;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     width: 100%;
     height: 100%;
     background: linear-gradient(to bottom, rgb(92, 86, 86),rgb(48, 48, 48)) no-repeat center center / cover;
 }
 
-#navlinks {
-    font-family: Roboto, sans-serif;
+nav {
+    position: fixed;
+}
+
+nav ul {
     font-weight: 300;
     font-size: 20px;
     color: white;
@@ -19,4 +31,45 @@ body {
     justify-content: center;
     column-gap: 4vw;
     row-gap: 0;
+    margin: 2vh 0 0 0;
+    padding: 0;
+
+}
+
+::selection {
+  text-shadow: none;
+  color: #000000;
+  background-color: rgb(255, 255, 255);
+}
+
+main {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+#face {
+    width: 40%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#decorativeblock {
+    position: absolute;
+    height: 100%;
+    width: 35%;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+#myface {
+    position: absolute;
+    bottom: 20vh;
+    left: -3%;
+}
+
+#landingtext {
+    width: 60%;
+    height: 100%;
 }
