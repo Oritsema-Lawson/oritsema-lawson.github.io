@@ -23,7 +23,7 @@ nav {
 
 nav ul {
     font-weight: 300;
-    font-size: 20px;
+    font-size: 200%;
     color: white;
     width: 100vw;
     display: flex;
@@ -65,11 +65,64 @@ main {
 
 #myface {
     position: absolute;
-    bottom: 20vh;
+    bottom: 5vh;
     left: -3%;
+    width: 50%;
 }
 
 #landingtext {
     width: 60%;
     height: 100%;
+    font-size: 200%;
+}
+
+#landingtext p {
+    margin-top: 42vh;
+    margin-right: 10vh;
+    text-align: right;
+    color: white;
+    font-weight: 300;
+}
+
+#landingtext p span {
+    color: #b3d4ff;
+    font-size: 300%;
+    font-weight: 700;
+    margin-left: 1vh;
+}
+
+#landingbuttons {
+    text-align: right;
+    margin-right: 10vh;
+}
+
+#landingbuttons button {
+    width: 15vw;
+    height: 6vh;
+    margin-left: 2vh;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    cursor: pointer;
+}
+
+#aboutmebutton {
+    background-color: #3c474b;
+    transition: background-color 0.5s ease-in-out 0.2s, color 0.5s ease-in-out 0.2s;
+}
+
+#aboutmebutton:hover {
+    background-color: #222525;
+    color: #474747;
+}
+
+#viewworkbutton {
+    background-image: linear-gradient(to right, #538fff, #c951ee);
+    background-size: 130%;
+    transition: background-position 0.5s ease-in-out 0.2s, color 0.5s ease-in-out 0.2s;
+}
+
+#viewworkbutton:hover {
+    color: #000000;
+    background-position: 90%;
 }
